@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DT Frontend Challenge</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <div class="nav-left">
+                <img src="./img/logo.svg" alt="DeepThought logo">
+            </div>
+            <div class="nav-right">
+                <ul class="links">
+                    <li><a href="#"><i class="fa-solid fa-house-chimney"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                    <li><a href="#"><img src="https://static.thenounproject.com/png/4035889-200.png" alt=""></a></li>
+                    <li><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="main-sidebar">
+            <div class="sidebar-top">
+                <h2>journey board</h2>
+                <button>
+                    <i class="fa-solid fa-bars" id="close-btn"></i>
+                </button>
+            </div>
+            <div class="sidebar-list-container">
+                <button id="open-btn" title="Open Button">1</button>
+                <div class="sidebar-list">
+                    <h2> 1. demo task</h2>
+                    <ul>
+                        <li class="list-item">task heading 1</li>
+                        <li class="list-item">task heading 2</li>
+                        <li class="list-item">task heading 3</li>
+                        <li class="list-item">task heading 4</li>
+                        <li class="list-item">task heading 5</li>
+                        <li class="list-item">task heading 6</li>
+                        <li class="list-item">task heading 7</li>
+                        <li class="list-item">task heading 8</li>
+                        <li class="list-item">task heading 9</li>
+                    </ul>
+                </div>
+   
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="main-nav">
+                <h3>You are taking Challenges of new project</h3>
+            </div>
+            <h1 class="main-heading">
+                demo task
+            </h1>
+            <section class="main-inner">
+                <!-- first container -->
+                <article class="single-container">
+                    <div class="single-heading">
+                        <h2>task heading 1</h2>
+                    </div>
+                    <div class="single-content hide">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis magni veniam voluptatibus doloremque soluta sequi sit
+                            assumenda repudiandae illo minus saepe perspiciatis, modi excepturi asperiores voluptatem iusto aut, quia ullam
+                            blanditiis harum aspernatur? Nesciunt officia mollitia voluptatem ab, debitis recusandae, quaerat aspernatur quisquam
+                            pariatur illo nobis earum eaque in omnis!
+                        </p>
+                    </div>
+                    <button class="toggle-btn"><i class="fa-solid fa-chevron-down"></i></button>
+                </article>
+
+                <!-- second container -->
+                <article class="single-container">
+                    <div class="single-heading">
+                        <h2>task heading 2</h2>
+                    </div>
+                    <div class="single-content hide">
+                        <span><i class="fa-solid fa-chevron-up"></i>thread a</span>
+                        <div class="single-container-inner">
+                            <!-- 1st -->
+                            <div class="single-content-inner">
+                                <div class="textarea-container">
+                                    <h4>Sub thread 1</h4>
+                                    <textarea name="Sub thread 1" id="" cols="22" rows="5" placeholder="Enter text here"></textarea>
+                                </div>
+                                <div class="textarea-container">
+                                    <h4>Sub interpretation 1</h4>
+                                    <textarea name="Sub thread 1" id="" cols="22" rows="5" placeholder="Enter text here"></textarea>
+                                </div>
+                            </div>
+                            <!-- 2nd -->
+                            <div class="single-content-inner">
+                                <div class="icon-container">
+                                    <a href="#"><img src="https://img.icons8.com/fluency-systems-filled/24/2c2c2c/idea.png" /></a>
+                                    <a href="#"><img src="https://img.icons8.com/material-rounded/24/2c2c2c/comments--v1.png" /></a>
+                                    <select name="category" id="category">
+                                        <option value="volvo">select category</option>
+                                    </select>
+                                    <select name="process" id="process">
+                                        <option value="process">select process</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- 3rd -->
+                            <div class="single-content-inner">
+                                <button><i class="fa-solid fa-plus"></i>sub thread</button>
+                            </div>
+                            <!-- 4th -->
+                            <div class="single-content-inner">
+                                <div class="textarea-container">
+                                    <h4>summary for thread a</h4>
+                                    <textarea name="Sub thread 1" id="" cols="52" rows="5" placeholder="Enter text here"></textarea>
+                                </div>
+                            </div>
+                            <!-- 5th -->
+                            <div class="single-content-inner">
+                                <div class="left">
+                                    <img src="https://img.icons8.com/windows/15/5c5c5c/link.png" />
+                                    <span>thread credit</span>
+                                    <img src="https://img.icons8.com/external-gradak-royyan-wijaya/15/0029ff/external-edit-gradak-writing-gradak-royyan-wijaya.png" />
+                                </div>
+                                <div class="right">
+                                    <select name="emotion" id="emotion">
+                                        <option value="emotion">Select emotion</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- 6th -->
+                            <div class="single-content-inner">
+                                <button><i class="fa-solid fa-plus"></i>new thread</button>
+                            </div>
+                            <!-- 7th -->
+                            <div class="single-content-inner">
+                                <button><i class="fa-solid fa-floppy-disk"></i></button>
+                            </div>
+                        </div>    
+                    </div>
+                    <button class="toggle-btn"><i class="fa-solid fa-chevron-down"></i></button>
+                </article>
+
+                <!-- third container -->
+                <article class="single-container">
+                    <div class="single-heading">
+                        <h2>task heading 3</h2>
+                    </div>
+                    <div class="single-content hide">
+                        <div class="single-content-inner">
+                            <textarea name="reflect as per given guidelines" cols="100" rows="8" placeholder="reflect as per given guidelines"></textarea>
+                        </div>
+                    </div>
+                    <button class="toggle-btn"><i class="fa-solid fa-chevron-down"></i></button>
+                </article>
+
+                <!-- fourth container -->
+                <article class="single-container">
+                    <div class="single-heading">
+                        <h2>task heading 4</h2>
+                    </div>
+                    <div class="single-content hide">
+                        <div class="single-content-inner">
+                            <object data='./pdf/Big_data_Wikipedia.pdf' type="application/pdf"
+                                width="500" height="678"></object>
+                        </div>
+                    </div>
+                    <button class="toggle-btn"><i class="fa-solid fa-chevron-down"></i></button>
+                </article>
+
+                <!-- seventh container -->
+                <article class="single-container">
+                    <div class="single-heading">
+                        <h2>task heading 7</h2>
+                    </div>
+                    <div class="single-content hide">
+                        <!-- 1st -->
+                        <div class="single-container-outer">
+                            <span><i class="fa-solid fa-chevron-up"></i>introduction</span>
+                            <div class="single-content-inner">
+                                <textarea name="introduction" id="" cols="52" rows="5" placeholder="Enter introduction"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- 2nd -->
+                        <div class="single-container-outer">
+                            <span><i class="fa-solid fa-chevron-up"></i>thread a</span>
+                            <div class="single-content-inner">
+                                <h4>example 1</h4>
+                                <textarea name="example" id="" cols="52" rows="5" placeholder="Enter text here"></textarea>
+                            </div>
+                            <div class="single-content-inner">
+                                <button><i class="fa-solid fa-plus"></i>example</button>
+                            </div>
+                            <div class="single-content-inner">
+                                <h4>argument for thread a</h4>
+                                <textarea name="Sub thread 1" id="" cols="52" rows="5" placeholder="Enter text here"></textarea>
+                            </div>
+                            <div class="single-content-inner">
+                                <button><i class="fa-solid fa-plus"></i>new thread</button>
+                            </div>
+                        </div>
+
+                        <!-- 3rd -->
+                        <div class="single-container-outer">
+                            <span><i class="fa-solid fa-chevron-up"></i>conclusion</span>
+                            <div class="single-content-inner">
+                                <textarea name="conclusion" id="" cols="52" rows="5" placeholder="Enter conclusion"></textarea>
+                            </div>
+                            <div class="single-content-inner">
+                                <button><i class="fa-solid fa-floppy-disk"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="toggle-btn"><i class="fa-solid fa-chevron-down"></i></button>
+                </article>
+
+                <!-- eighth container -->
+                <article class="single-container">
+                    <div class="single-heading">
+                        <h2>task heading 8</h2>
+                    </div>
+                    <div class="single-content hide">
+                        <p>
+                            Audio file doesn't exist
+                        </p>
+                    </div>
+                    <button class="toggle-btn"><i class="fa-solid fa-chevron-down"></i></button>
+                </article>
+
+                <!-- ninth container -->
+                <article class="single-container">
+                    <div class="single-heading">
+                        <h2>task heading 9</h2>
+                    </div>
+                    <div class="single-content hide">
+                        <div class="single-container-inner">
+                            <iframe src="https://www.youtube.com/embed/s8H0Sx7jy7c"
+                                title="SD LMS | Teacher Testimonial | TSUS" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <button class="toggle-btn"><i class="fa-solid fa-chevron-down"></i></button>
+                </article>
+            </section>
+        </div>
+    </main>
+    <section class="button-container">
+        <button>next</button>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
